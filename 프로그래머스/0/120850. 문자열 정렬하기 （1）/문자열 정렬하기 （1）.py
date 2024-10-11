@@ -1,0 +1,10 @@
+def solution(my_string):
+    answer = []
+    num_list = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+    for i in my_string:
+        for num in num_list:
+            if i == str(num):
+                answer.append(int(i))
+    
+    return sorted(answer)
