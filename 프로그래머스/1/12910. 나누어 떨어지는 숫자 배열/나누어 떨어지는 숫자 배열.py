@@ -1,14 +1,19 @@
 def solution(arr, divisor):
-    answer = [ ]
+#     answer = [ ]
     
-    for i in arr:
+#     for i in arr:
         
-        if i % divisor == 0:
-            answer.append(i)
+#         if i % divisor == 0:
+#             answer.append(i)
     
-    if len(answer) == 0:
-        answer.append(-1)
+#     if len(answer) == 0:
+#         answer.append(-1)
     
-    answer.sort()
+#     answer.sort()
     
-    return answer
+#     return answer
+
+    array = [i for i in arr if i % divisor == 0]
+    array.sort()
+    
+    return array if len(array) != 0 else [-1]
