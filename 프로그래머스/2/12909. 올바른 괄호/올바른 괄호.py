@@ -6,9 +6,12 @@ def solution(s):
         if i == "(":
             stack.append(i)
         else:
-            if stack == [] :
+            if stack == [ ]:
                 return False
             else:
                 stack.pop()
-                
-    return len(stack) == 0
+            
+    if len(stack) != 0:
+        return False
+    
+    return True
